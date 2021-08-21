@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 4.5em; }
+
+h2 {
+  font-size: 3.5em; }
+
+h3 {
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 1.5em; }
+
+.scale:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer; }
+
+.mainNuestroTaller {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  text-align: center; }
+  .mainNuestroTaller img {
+    width: 90%;
+    padding: 1em; }
+
+header img {
+  width: 200px; }
+
+header nav img {
+  width: 40px; }
+
+body {
+  background-image: url(/imagenes/blackmamba.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anton", sans-serif;
+  margin-bottom: 0.7em;
+  color: whitesmoke;
+  text-align: center; }
+
+p {
+  font-family: "Anton", sans-serif;
+  line-height: 1.3em;
+  color: whitesmoke;
+  padding: 1em; }
+
+footer nav div img {
+  width: 70px; }
+
+footer nav nav div ul li a {
+  color: whitesmoke; }
+
+.errorBody {
+  background: linear-gradient(45deg, #8500ff, #5acaff);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px; }
+
+.dignidad {
+  background-image: url(/img404/dignidad.jpg);
+  height: 800px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: center; }

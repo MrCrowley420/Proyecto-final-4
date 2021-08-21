@@ -1,0 +1,25 @@
+body {
+    background-image: url(/imagenes/blackmamba.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fontMain;
+    margin-bottom: $mb;
+    color: $bg-white;
+    text-align: center;
+}
+
+p {
+    font-family: $fontMain;
+    // font-size: $fontSizeMedium;
+    line-height: 1.3em;
+    color: $bg-white;
+    padding: $p;
+}

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//colores
+$bg-white: whitesmoke;
+//tamaños
+$w-25: 25%;
+$w-50: 50%;
+$w-100: 100%;
+//padding
+$py-1: 1em 0;
+$px-1: 0 1em;
+$p: 1em;
+//margin
+$mb:0.7em;
+//OPERADORES
+@for $i from 1 to 5 {
+    h#{$i} {
+        font-size: 5.5em -$i
+    }
+}
+
+// Mixin
+@mixin p-m($relleno, $margen) {
+    padding: $relleno;
+    margin: $margen;
+}
+
+// footer {
+//     @include p-m(2em, 0.5em);
+// }
+//clases animacion
+.scale:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+//clases
+.mainNuestroTaller {
+    display: flex;
+    flex-direction: column;
+    color: $bg-white;
+    text-align: center;
+    img {
+        width: 90%;
+        padding: $p;
+    }
+}

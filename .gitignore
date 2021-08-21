@@ -1,0 +1,6 @@
+lowLifeDamianCorrea/
+*.json
+node_modules/
+*.ai
+*.temp
+*.pdf
