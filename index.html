@@ -75,13 +75,54 @@
     <main>
         <h2>TALLER ESPECIALIZADO EN MECANICA Y CUSTOMIZACIONES</h2>
 
+        <!-- ABRE CARDS CON GALERIA Y MODAL CON CICLO FOR-->
+        <div class="container-fluid">
+            <div class="d-flex align-content-stretch flex-wrap card-columns-group" id="galeria">
+                <!-- <div class="card m-2" style="width: 18rem;">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="/img/1.jpg" class="card-img-top" alt="...">
+                    </a>
+                </div>
+               
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="btn-close bg-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <img src="/img/1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div> -->
+                <script>
+                    var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 15, 16, 17, 18, 19, 20];
+                    var galeria = document.getElementById('galeria');
+
+                    for (imagen of imagenes) {
+                        galeria.innerHTML += `
+                        <div class="card m-2 scale" style="width: 18rem;">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#id${imagen}">
+                        <img src="/img/${imagen}.jpg" class="card-img-top" alt="...">
+                    </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="id${imagen}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="btn-close bg-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <img src="/img/${imagen}.jpg" alt="" class="img-fluid rounded">
+                    </div>
+                    </div>
+                        `
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!--CIERRA CARDS CON GALERIA Y MODAL CON CICLO FOR-->
+
         <h3>⚡HONDA CBX 1050⚡</h3>
         <div class="container-fluid">
             <div class="row">
                 <article class="col-lg-6">
                     <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2FLow.life.motorcycle.co%2Fvideos%2F326612168620994%2F&show_text=false&width=560&t=0 " width="100% " height="400 " style="border:none;overflow:hidden
                     " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share " allowFullScreen="true "></iframe>
-                    <h4 class="text-start">Fabricacion de escape completo en inoxidable 6 a 2. Un trabajo que demando de muchisimos gajos de inox y kilometros de soldaduras TIG 🔥 Como siempre, dando lo mejor en cada trabajo!</h4>
+                    <p class="text-start">Fabricacion de escape completo en inoxidable 6 a 2. Un trabajo que demando de muchisimos gajos de inox y kilometros de soldaduras TIG 🔥 Como siempre, dando lo mejor en cada trabajo!</p>
                 </article>
                 <article class="col-lg-6">
                     <img src="/imagenes/escapeRoyalSeis.jpg" width="100%" alt="">
