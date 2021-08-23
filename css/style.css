@@ -35,7 +35,7 @@ header nav img {
   width: 40px; }
 
 body {
-  background-image: url(/imagenes/blackmamba.png);
+  background: url(../imagenes/blackmamba.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center top; }
@@ -54,7 +54,9 @@ p {
   font-family: "Anton", sans-serif;
   line-height: 1.3em;
   color: whitesmoke;
-  padding: 1em; }
+  padding: 1em;
+  text-align: start;
+  font-size: 1.2em; }
 
 footer nav div img {
   width: 70px; }

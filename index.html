@@ -5,8 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Gradient Animations-->
-    <link rel="stylesheet" href="css/gradient-animations.css">
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +27,7 @@
         <!--INICIA NAV-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"> <img class="scale" src="/imagenes/lowTransparente.png" alt="Logo de Low Life Motorcycles co."></a>
+                <a class="navbar-brand" href="index.html"> <img class="scale" src="./imagenes/lowTransparente.png" alt="Logo de Low Life Motorcycles co."></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,16 +35,16 @@
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="nuestrotaller.html">Nuestro taller</a>
+                            <a class="nav-link" aria-current="page" href="./nuestrotaller.html">Nuestro taller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nuestrostrabajos.html">Nuestros trabajos</a>
+                            <a class="nav-link" href="./nuestrostrabajos.html">Nuestros trabajos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="staff.html">Staff</a>
+                            <a class="nav-link" href="./staff.html">Staff</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
 
                     </ul>
@@ -54,20 +52,20 @@
 
                     <div class="d-flex">
                         <a class="nav-link scale" href="">
-                            <img src="/imagenes/whatsapp.png" alt="numero de whatsapp">
+                            <img src="./imagenes/whatsapp.png" alt="numero de whatsapp">
                         </a>
                         <a class="nav-link scale" href="https://www.facebook.com/Low.life.motorcycle.co/?ref=page_internal" target="_blank">
-                            <img src="/imagenes/fb.png" alt="seguinos en facebook">
+                            <img src="./imagenes/fb.png" alt="seguinos en facebook">
                         </a>
                         <a class="nav-link scale" href="https://www.instagram.com/low.life.motorcycles.corp/" target="_blank">
-                            <img src="imagenes/insta.png" alt="seguinos en instagram">
+                            <img src="./imagenes/insta.png" alt="seguinos en instagram">
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
         <!--CIERRA NAV-->
-        <h1>LOW LIFE CUSTOMS</h1>
+        <h1 class="border-bottom">LOW LIFE CUSTOMS</h1>
     </header>
     <!--CIERRA HEADER-->
 
@@ -76,37 +74,25 @@
         <h2>TALLER ESPECIALIZADO EN MECANICA Y CUSTOMIZACIONES</h2>
 
         <!-- ABRE CARDS CON GALERIA Y MODAL CON CICLO FOR-->
-        <div class="container-fluid">
-            <div class="d-flex align-content-stretch flex-wrap card-columns-group" id="galeria">
-                <!-- <div class="card m-2" style="width: 18rem;">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="/img/1.jpg" class="card-img-top" alt="...">
-                    </a>
-                </div>
-               
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <button type="button" class="btn-close bg-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <img src="/img/1.jpg" alt="" class="img-fluid">
-                    </div>
-                </div> -->
+        <div class="container mb-5 border-bottom">
+            <div class="d-flex justify-content-evenly flex-wrap card-columns-group mb-5" id="galeria">
                 <script>
-                    var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 15, 16, 17, 18, 19, 20];
+                    var imagenes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
                     var galeria = document.getElementById('galeria');
 
                     for (imagen of imagenes) {
                         galeria.innerHTML += `
-                        <div class="card m-2 scale" style="width: 18rem;">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#id${imagen}">
-                        <img src="/img/${imagen}.jpg" class="card-img-top" alt="...">
-                    </a>
+                    <div class="card m-2 scale" style="width: 18rem;">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#id${imagen}">
+                            <img src="./img/${imagen}.jpg" class="card-img-top" alt="galeria de imagenes de low life">
+                        </a>
                     </div>
                     <!-- Modal -->
                     <div class="modal fade" id="id${imagen}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <button type="button" class="btn-close bg-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <img src="/img/${imagen}.jpg" alt="" class="img-fluid rounded">
-                    </div>
+                        <button type="button" class="btn-close bg-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <img src="./img/${imagen}.jpg" alt="" class="img-fluid rounded">
+                        </div>
                     </div>
                         `
                     }
@@ -115,94 +101,85 @@
         </div>
 
         <!--CIERRA CARDS CON GALERIA Y MODAL CON CICLO FOR-->
-
         <h3>⚡HONDA CBX 1050⚡</h3>
-        <div class="container-fluid">
-            <div class="row">
-                <article class="col-lg-6">
+        <div class="container">
+            <div class="row justify-content-center border-bottom">
+                <article>
                     <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2FLow.life.motorcycle.co%2Fvideos%2F326612168620994%2F&show_text=false&width=560&t=0 " width="100% " height="400 " style="border:none;overflow:hidden
-                    " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share " allowFullScreen="true "></iframe>
-                    <p class="text-start">Fabricacion de escape completo en inoxidable 6 a 2. Un trabajo que demando de muchisimos gajos de inox y kilometros de soldaduras TIG 🔥 Como siempre, dando lo mejor en cada trabajo!</p>
-                </article>
-                <article class="col-lg-6">
-                    <img src="/imagenes/escapeRoyalSeis.jpg" width="100%" alt="">
+                    " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share " allowFullScreen="true " class="rounded"></iframe>
+                    <p>Fabricacion de escape completo en inoxidable 6 a 2. Un trabajo que demando de muchisimos gajos de inox y kilometros de soldaduras TIG 🔥 Como siempre, dando lo mejor en cada trabajo!</p>
                 </article>
             </div>
         </div>
 
-
-
-
         <!--ABRE CARDS-->
-        <div class="row m-5 ">
-            <article class="col-lg-4 pb-3 ">
-                <div class="card ">
-                    <img src="imagenes/staffDos.jpg " class="card-img-top " alt="Logo blanco de low life built with hate ">
-                    <div class="card-body ">
-                        <h5 class="card-title bg-dark p-3 ">Turnos Customizaciones</h5>
-                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button " class="btn btn-dark w-100 ">
+        <div class="container">
+            <div class="row m-5 ">
+                <h3 class="bg-danger">RESERVA TU TURNO</h3>
+                <article class="col-lg-4 pb-3 ">
+                    <div class="card ">
+                        <img src="./imagenes/taller-cuatro.jpg " class="card-img-top" alt="Logo blanco de low life built with hate ">
+                        <div class="card-body ">
+
+                            <h5 class="card-title bg-dark p-3 ">Turnos Customizaciones</h5>
+
+                            <button type="button " class="btn btn-dark w-100 ">
                     Disponibles <span class="badge bg-danger ">9</span>
                   </button>
-                    </div>
-                </div>
-            </article>
-            <article class="col-lg-4 pb-3 ">
-                <div class="card ">
-                    <img src="imagenes/staffDos.jpg " class="card-img-top " alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title bg-dark p-3 ">Turnos Mecanica</h5>
-                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="dropdown ">
-                            <button class="btn btn-dark dropdown-toggle w-100 " type="button " id="dropdownMenuButton1 " data-bs-toggle="dropdown " aria-expanded="false ">
-                      No bajes
-                    </button>
-                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1 ">
-                                <li><a class="dropdown-item " href="# ">Action</a></li>
-                                <li><a class="dropdown-item " href="# ">Another action</a></li>
-                                <li><a class="dropdown-item " href="# ">Something else here</a></li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-            </article>
-            <article class="col-lg-4 pb-3 ">
-                <div class="card ">
-                    <img src="imagenes/staffDos.jpg " class="card-img-top " alt="... ">
-                    <div class="card-body ">
-                        <h5 class="card-title bg-dark p-3 ">Consultas</h5>
-                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="# " class="btn btn-dark w-100 ">Go somewhere</a>
+                </article>
+                <article class="col-lg-4 pb-3 ">
+                    <div class="card ">
+                        <img src="./imagenes/japonDos.jpg " class="card-img-top" alt="... ">
+                        <div class="card-body">
+                            <h5 class="card-title bg-dark p-3 ">Turnos Mecanica</h5>
+
+                            <div class="dropdown ">
+                                <button type="button " class="btn btn-dark w-100 ">
+                                Disponibles <span class="badge bg-danger ">5</span>
+                              </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+                <article class="col-lg-4 pb-3 ">
+                    <div class="card ">
+                        <img src="./imagenes/staffDos.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title bg-dark p-3 ">Consultas</h5>
+
+                            <a href="./contacto.html" class="btn btn-dark w-100 scale">⚡Dejanos tu mensaje⚡</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
         <!--CIERRA CARDS-->
     </main>
     <!--CIERRA MAIN-->
 
-
     <!--ABRE FOOTER-->
     <footer>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html"><img class="scale" src="/imagenes/low-life-built-with-hate-logo.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img class="scale" src="./imagenes/low-life-built-with-hate-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="nuestrotaller.html">Nuestro taller</a>
+                            <a class="nav-link text-white" aria-current="page" href="./nuestrotaller.html">Nuestro taller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="nuestrostrabajos.html">Nuestros trabajos</a>
+                            <a class="nav-link text-white" href="./nuestrostrabajos.html">Nuestros trabajos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="staff.html">Staff</a>
+                            <a class="nav-link text-white" href="./staff.html">Staff</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                            <a class="nav-link text-white" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
