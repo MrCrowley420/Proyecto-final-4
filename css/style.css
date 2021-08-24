@@ -19,15 +19,6 @@ h4 {
   transform: scale(1.1, 1.1);
   cursor: pointer; }
 
-.mainNuestroTaller {
-  display: flex;
-  flex-direction: column;
-  color: whitesmoke;
-  text-align: center; }
-  .mainNuestroTaller img {
-    width: 90%;
-    padding: 1em; }
-
 header img {
   width: 200px; }
 
@@ -57,6 +48,23 @@ p {
   padding: 1em;
   text-align: start;
   font-size: 1.2em; }
+
+img {
+  width: 100%; }
+
+.imagen {
+  width: 30%; }
+
+.imagenDos {
+  width: 50%; }
+
+.nuestrosTrabajos ul {
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-family: "Anton", sans-serif; }
+  .nuestrosTrabajos ul li {
+    margin-bottom: 0.7em;
+    list-style: none; }
 
 footer nav div img {
   width: 70px; }
