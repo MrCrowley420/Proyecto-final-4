@@ -95,7 +95,7 @@ footer nav nav div ul li a {
   padding: 50px; }
 
 .dignidad {
-  background-image: url(/img404/dignidad.jpg);
+  background: url(../img404/dignidad.jpg);
   height: 800px;
   border-radius: 20px;
   background-size: cover;
