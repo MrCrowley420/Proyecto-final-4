@@ -6,8 +6,6 @@
 //colores
 $bg-white: whitesmoke;
 //padding
-$py-1: 1em 0;
-$px-1: 0 1em;
 $p: 1em;
 //margin
 $mb:0.7em;
@@ -18,8 +16,36 @@ $mb:0.7em;
     }
 }
 
+// Mixin
+@mixin p-m($relleno, $margen) {
+    padding: $relleno;
+    margin: $margen;
+}
+
+.mixinUno {
+    @include p-m(2em, 0.5em);
+}
+
 //clases animacion
 .scale:hover {
     transform: scale(1.1, 1.1);
     cursor: pointer;
+}
+
+//Media
+@media (max-width: 768px) {
+    .subTitulo {
+        font-size: 3em;
+    }
+    .media {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .mediaDos {
+        display: flex;
+        justify-content: center;
+    }
 }
